@@ -1,0 +1,1 @@
+alert("Hi Welcome to Video 02 of sigma web development course");       
