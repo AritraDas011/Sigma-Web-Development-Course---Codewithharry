@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="post">
+        <div>
+            <label for="username">Enter your username</label>
+            <input id="username" type="text" name="username" placeholder="Enter your username" autofocus>
+        </div>
+        <br>
+        <div>
+            <label for="password">Enter your password</label>
+            <input id="password" type="password" name="password" placeholder="Enter your password">
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+        </div>
+        <div>
+            <label for="Cars">Your favourite car</label>
+            <select id="cars" name="cars">
+                <option value="lamborghini">Lamborghini</option>
+                <option value="buggati">Buggati</option>
+                <option value="ferrari">Ferrari</option>
+            </select>
+        </div>
+        <div>
+            <form action="/submit">
+                <textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea>
+                <select name="fruits">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="cherry">Cherry</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </form>
+</body>
+
+</html>
