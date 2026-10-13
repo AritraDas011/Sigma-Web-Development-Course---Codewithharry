@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Universal selector  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Element selector  */
+        div {
+            background-color: aqua;
+        }
+
+        /* Class selector  */
+        .container {
+            color: blue;
+        }
+
+        /* ID selector  */
+        #red {
+            color: brown;
+        }
+        /* Child selector  */
+        main > p{
+            background-color: chocolate;
+        }
+        /* Descendant selector  */
+        article p{
+            color: darkgreen;
+        }
+        /* Pseudo selector  */
+        a:visited{
+            color: red ;
+        }
+        a:link{
+            color: violet;
+        }
+        a:active{
+            background-color: darkblue;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+        p:first-child{
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Hi I am div
+    </div>
+    <span id="red"> Hi I am span</span>
+    <main>
+        <p>HELLO</p>
+        
+    </main>
+    <article>
+         <section>
+            <p>GG</p>
+            
+         </section>
+    </article>
+    <a href="https://www.krafton.com">Krafton</a>
+    <nav>
+        <p>HI</p>
+        <p> I AM PARA</p>
+    </nav>
+</body>
+
+</html>
