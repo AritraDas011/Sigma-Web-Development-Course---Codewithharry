@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity </title>
+    <style>
+        div{
+            color: brown;
+        }
+        .purple{
+            color: purple;
+        }
+        .cred{
+            color:red;
+        }
+        .cyellow{
+            color: yellow;
+        }
+        [data-x="b"]{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="purple cred cyellow" data-x="b">I am a div</div>
+</body>
+</html>
