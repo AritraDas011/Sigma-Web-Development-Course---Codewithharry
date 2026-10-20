@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units Practice</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        .H1 {
+            font-size: 2rem;
+        }
+
+        .box {
+            padding: 0.75rem;
+            margin: 1.25rem;
+        }
+
+
+        .vh-box {
+            height: 40vh;
+            width: 200px;
+            background-color: coral;
+        }
+
+        .vmin-box {
+            width: 50vmin;
+            height: 50px;
+            background-color: purple;
+        }
+
+        .vmax-box {
+            width: 20vmax;
+            height: 50px;
+            background-color: orange;
+        }
+
+        .em-box {
+            font-size: 20px;
+            padding: 1.5em;
+            background-color: lightblue;
+        }
+
+        /* .parent{
+            font-size: 20px;
+        }
+        .child{
+            font-size: 1.5em;
+            background-color: lightgreen;
+        } */
+        /* .grandchild{
+            font-size: 1.2em;
+        }      */
+        .parent {
+            font-size: 24px;
+        }
+
+        .child {
+            font-size: 1.5rem;
+        }
+
+        .unit-button {
+            font-size: 18px;
+            padding: 0.5em 1.25em;
+            background-color: lightblue;
+        }
+
+        .spacing-box {
+            font-size: 20px;
+            padding: 1.5em;
+            margin: 2em;
+            background-color: lightblue;
+        }
+
+        .parent {
+            width: 600px;
+            background-color: lightgray;
+        }
+
+        .percent-box {
+            width: 50%;
+            height: 50px;
+            background-color: lightblue;
+        }
+
+        .vw-box {
+            width: 50vw;
+            height: 50px;
+            background-color: lightgreen;
+        }
+
+        .box-model {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="H1">CSS Units Practice</h1>
+    <div class="vh-box"></div>
+    <div class="vmin-box"></div>
+    <div class="vmax-box"></div>
+    <div class="em-box"></div>
+    <div class="parent">
+        <div class="percent-box"></div>
+        <div class="vw-box"></div>
+    </div>
+    <div class="unit-button">Buy Now</div>
+    <div class="spacing-box">CSS Units</div>
+    <div class="box-model"></div>
+</body>
+
+</html>
