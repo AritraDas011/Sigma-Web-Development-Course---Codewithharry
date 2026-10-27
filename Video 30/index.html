@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --color: rgb(52, 56, 255);
+            --twocolor: rgb(6, 8, 122);
+            --defpad: 34px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        .container {
+            --twocolor: rgb(30, 194, 158);
+            background-color: var(--twocolor);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: var(--defpad);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, modi. Id optio, odio soluta at porro quas!
+        Accusamus expedita placeat quaerat voluptatem sunt iste cupiditate voluptatibus eligendi unde itaque, natus
+        voluptas et incidunt laborum assumenda magnam sequi magni doloribus eveniet sapiente illum. Mollitia, officia
+        in?
+    </div>
+</body>
+
+</html>
