@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box::first-line{
+            color: blue;
+        } */
+
+
+         /* .boxes *{
+            border: 2px solid red;
+         } */
+
+
+     /* p, a, span [data-color="primary"]{
+            background-color: aquamarine;
+        } */
+
+
+        ::selection{
+            background-color: black;
+            color: cyan;
+        }
+
+
+        /* .box:nth-last-child(2){
+            background-color: blue;
+        } */
+
+
+        .boxes::before{
+            content: "HI AMM";
+        }
+        .boxes::after{
+            content: "Hello MMA";
+        }
+        .box::first-letter{
+            font-size: 25px;
+        }
+        input::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a box</div>
+        <div data-color="primary" class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+    </div>
+    <input type="text" placeholder="Type your name here">
+</body>
+</html>
