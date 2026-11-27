@@ -1,0 +1,221 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    overflow-x: hidden;
+}
+
+.logo {
+    font-size: 2em;
+    padding: 14px 0px 12px 12px;
+    margin: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    font-weight: 800;
+}
+
+.nav > ul {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    gap: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button button {
+    margin-top: 19px;
+    /* margin-left: 2px; */
+    font-size: 20px;
+    background-color: #4C1D95;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s cubic-bezier(0.25, 0.1, 0.08, 0.71) 0s;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: #6D28D9;
+    color: white;
+}
+
+ul li {
+    padding: 5px 20px 5px 20px;
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.08, 0.71) 0s;
+    cursor: pointer;
+    
+}
+
+ul li:hover {
+    border: 1px solid rgb(235, 232, 232);
+    background-color: darkblue;
+    border-radius: 7px;
+    transform: scale(2);
+    font-weight: 800;
+    color: white;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.button:nth-child(3) {
+    display: flex;
+    justify-content: center;
+
+}
+
+.button:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.08, 0.71) 0s;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image img {
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 100px;
+
+}
+
+.card img {
+    
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    /* object-fit: ; */
+
+    border-radius: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 15px;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.08, 0.71) 0s;
+}
+
+.card h2 {
+    margin-top: 20px;
+    color: darkblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.rs {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ds {
+    margin: 5px;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bn button {
+    margin-top: 19px;
+    /* margin-left: 2px; */
+    font-size: 20px;
+    background-color: #4C1D95;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s cubic-bezier(0.25, 0.1, 0.08, 0.71) 0s;
+    padding: 10px;
+    border: 1px solid black;
+
+
+}
+
+.bn button:hover {
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.08, 0.71) 0s;
+    transform: scale(1.5);
+}
+
+.bn {
+    display: grid;
+    place-items: center;
+}
+
+.foot > p:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    color: purple;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px;
+
+}
+
+.links a:visited {
+    color: #4C1D95;
+}
+
+.links a:link {
+    color: darkblue;
+}
+
+.foot p:last-child {
+    font-size: 20px;
+    color: beige;
+}
+
+@media screen and (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .button button{
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+        /* place-content: ; */
+        
+    }
+    .button1 button{
+       
+        width: auto;
+        height: 10vh;
+        padding: 10px 16px;
+        white-space: nowrap;
+    }
+    .card{
+        display: grid;
+        place-items: center;
+        place-content: center;
+    }
+    
+}
+    
